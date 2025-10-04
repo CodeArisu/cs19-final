@@ -1,3 +1,70 @@
+# Docker Installation Guide
+
+This docker installation guide is based off the Docker's official website https://docs.docker.com/
+
+## Step 1
+
+Cloning this repository from Docker Docs https://docs.docker.com/get-started/workshop/02_our_app/
+
+```c
+git clone https://github.com/docker/getting-started-app.git
+```
+
+## Step 2
+
+Adding **Dockerfile** with this content
+
+```dockerfile
+# syntax=docker/dockerfile:1
+
+FROM node:lts-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
+```
+
+## step 3
+
+Open to the apps **Directory**
+
+```
+cd /path/to/getting-started-app
+```
+
+Create an image then run docker build
+
+```
+docker build -t getting-started .
+```
+
+Then wait for the build to finish.
+
+![docker image 1](https://github.com/CodeArisu/cs19-final/blob/main/docker1.png?raw=true)
+
+note: make sure that the "Dockerfile" is correctly spelled and capitalized, otherwise it will return an error.
+
+## step 3
+
+Run the container
+
+```
+docker run -d -p 127.0.0.1:3000:3000 getting-started
+```
+
+Then go to browser and type http://localhost:3000, the app should be present and fully working.
+
+## step 4 (Optional) 
+
+If its not showing try (on terminal)
+
+```
+docker ps
+```
+
+to see if the container or image is running or you mistyped/misconfig the project.
+
 # Getting started
 
 This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/.
