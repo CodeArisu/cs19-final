@@ -41,7 +41,7 @@ docker build -t getting-started .
 
 Then wait for the build to finish.
 
-![docker image 1](https://github.com/CodeArisu/cs19-final/blob/main/docker1.png?raw=true)
+![docker image 1](https://github.com/CodeArisu/cs19-final/blob/main/images/docker1.png?raw=true)
 
 note: make sure that the "Dockerfile" is correctly spelled and capitalized, otherwise it will return an error.
 
@@ -57,13 +57,20 @@ Then go to browser and type http://localhost:3000, the app should be present and
 
 ## step 4 (Optional) 
 
-If its not showing try (on terminal)
+If its not showing try (on terminal) to see if the container or image is running or you mistyped/misconfig the project.
 
 ```
 docker ps
 ```
 
-to see if the container or image is running or you mistyped/misconfig the project.
+This should display to your terminal:
+
+![docker image 2](https://github.com/CodeArisu/cs19-final/blob/main/images/docker2.png?raw=true)
+
+
+## Demo Video
+
+Here is the link for the setup: https://drive.google.com/file/d/1ZOsOKv9JnQ_-GJVcdgS2pROqXW8TsuIK/view?usp=sharing
 
 # Getting started
 
