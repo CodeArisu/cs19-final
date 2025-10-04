@@ -55,6 +55,8 @@ docker run -d -p 127.0.0.1:3000:3000 getting-started
 
 Then go to browser and type http://localhost:3000, the app should be present and fully working.
 
+![docker image 3](https://github.com/CodeArisu/cs19-final/blob/main/images/docker3.png?raw=true)
+
 ## step 4 (Optional) 
 
 If its not showing try (on terminal) to see if the container or image is running or you mistyped/misconfig the project.
@@ -67,6 +69,13 @@ This should display to your terminal:
 
 ![docker image 2](https://github.com/CodeArisu/cs19-final/blob/main/images/docker2.png?raw=true)
 
+If you want to stop the container use:
+
+```
+docker stop <container_name_or_id>
+```
+
+note: should be inside the directory in order to work.
 
 ## Demo Video
 
