@@ -45,7 +45,7 @@ Then wait for the build to finish.
 
 note: make sure that the "Dockerfile" is correctly spelled and capitalized, otherwise it will return an error.
 
-## step 3
+## step 4
 
 Run the container
 
@@ -57,7 +57,7 @@ Then go to browser and type http://localhost:3000, the app should be present and
 
 ![docker image 3](https://github.com/CodeArisu/cs19-final/blob/main/images/docker3.png?raw=true)
 
-## step 4 (Optional) 
+## step 5 (Optional) 
 
 If its not showing try (on terminal) to see if the container or image is running or you mistyped/misconfig the project.
 
